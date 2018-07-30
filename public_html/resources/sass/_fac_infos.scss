@@ -1,0 +1,65 @@
+
+
+.fac_owner, .fac_website {
+  font-size: 75%;
+}
+
+.fac_infos{
+  display: flex;
+  margin-bottom: 15%;
+
+  @media (screen and min-width: 768px){
+    margin-bottom: 10%;
+  }
+
+  @media (screen and min-width: 992px){
+    margin-bottom: 5%;
+  }
+
+  @media (screen and min-width: 1200px){
+    margin-bottom: 3%;
+  }
+}
+
+.fac_contact_info {
+  // width: 43%;
+  padding-right: 3%;
+  float: left;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &>div {
+    margin: 5%;
+    padding: 1%;
+
+    &>p{
+      font-size: 80%;
+
+      @media (screen and min-width: 640px){
+
+      font-size: 85%;
+      }
+      @media (screen and min-width: 768px){
+        font-size: 90%;
+      }
+
+      &>span {
+        font-size: 90%;
+        @media (screen and min-width: 640px){
+
+        font-size: 95%;
+        }
+        @media (screen and min-width: 768px){
+          font-size: 100%;
+        }
+      }
+    }
+  }
+}
+
+.fac_description{
+  font-size: 95%;
+  font-family: $font2;
+}

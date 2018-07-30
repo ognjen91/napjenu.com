@@ -1,0 +1,198 @@
+.navigation {
+  // height: 15vh;
+  padding: 2%;
+  // border: $red1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+
+
+  @media (screen and min-width: 768px){
+         margin-bottom: 0%;
+  }
+  &>div{
+
+    // border: $red2;
+
+
+  }
+
+}
+
+
+.logo, .hamburger_menu{
+
+   width: 25%;
+@include flex_center_image(80%, 100%);
+
+   @media (screen and min-width: 460px){
+      width: 20%;
+
+   }
+
+   @media (screen and min-width: 640px){
+      width: 17.5%;
+
+   }
+   @media (screen and min-width: 768px){
+      width: 14%;
+
+   }
+
+
+   @media (screen and min-width: 992px){
+      width: 11%;
+
+   }
+
+   @media (screen and min-width: 992px){
+      width: 8%;
+
+   }
+}
+
+
+// ==.naviagtion child divs=======
+.logo {
+
+
+  display: flex;
+
+margin-left: auto;
+
+
+  // display: none;
+}
+
+.main_nav {
+display: flex;
+display: none;
+z-index: 1000;
+background-color: #fff;
+
+& .close_nav{
+  display: block;
+  position: fixed;
+  top:0;
+  right: 0%;
+  // border: $black1;
+  width: 5%;
+  padding: 3%;
+  text-align: center;
+}
+
+
+  width: 100vw;
+  height: 100vh;
+  // border: $blue1;
+
+  justify-content: center;
+  align-items: center;
+
+
+  & ul{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    // border: $green1;
+
+  }
+
+
+  &>ul>li{
+      margin-bottom: 23%;
+      text-align: center;
+  }
+
+  & .menu_objects{
+    display: none;
+    // border: $green1;
+  }
+}
+
+
+
+
+.hamburger_menu {
+
+margin-right: auto;
+ display: flex;
+
+
+  // display: none;
+}
+
+// ====/==========
+
+
+/////LOGED OWNER////
+
+.logged_owner_info {
+  margin-left: -2%;
+  width: 100%;
+  // border: $green1;
+  display: flex;
+
+  &>div{
+    // border: $red1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+      @media (screen and min-width: 640px){
+           width: 10%;
+      }
+
+      @media (screen and min-width: 768px){
+           width: 8%;
+      }
+      @media (screen and min-width: 992px){
+           width: 7%;
+      }
+      @media (screen and min-width: 1200px){
+           width: 6%;
+      }
+  }
+}
+
+.nav_profile_img{
+  width: 15%;
+  display: flex;
+  @include flex_center_image(40%);
+  margin-right: -2%;
+
+}
+
+.nav_username{
+  margin-right: -2%;
+}
+
+.show_nav_profile_options{
+  width: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  @include flex_center_image(40%);
+}
+
+.nav_profile_options{
+  display: none;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 90%;
+  border: $black1;
+  padding: 3%;
+  background-color: #fff;
+  z-index: 100;
+
+  &>div{
+    margin-bottom: 3%;
+    text-align: center;
+
+    &>a{
+      text-decoration: none;
+      color: black;
+
+         }
+  }
+}

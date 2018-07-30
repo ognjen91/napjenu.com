@@ -1,0 +1,164 @@
+//centrira sliku odredjene velicine
+// struktura: div u koji ukljucujemo ovaj mixin>image_holder>img
+@mixin flex_center_image($holder_width: 100%, $image_width: 100%){
+
+  justify-content: center;
+  align-items: center;
+
+    & .image_holder {
+  width: $holder_width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &>img{
+    width: $image_width;
+  }
+
+}
+
+
+}
+
+
+@mixin slider_center_img(){
+
+}
+
+
+
+//centrira sliku odredjene velicine KOJA JE LINK
+//// struktura: div u koji ukljucujemo ovaj mixin>image_holder>a>img
+@mixin flex_center_a_image($holder_width: 100%, $image_width: 100%){
+
+  justify-content: center;
+  align-items: center;
+
+    &>.image_holder {
+  width: $holder_width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & img{
+    width: $image_width;
+  }
+
+}
+
+
+}
+
+//stilizuje listu pogodnosti1
+// struktura div.amenity>(p+(div.image_holder>img))
+
+@mixin amenities_style1(){
+    display: flex;
+    flex-direction: column;
+
+    &>div{
+      display: flex;
+      margin-bottom: 5%;
+
+      &>p {
+        width:60%;
+        text-align: center;
+      }
+
+      &>div{
+        width: calc(20% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &>img{
+          width: 21%;
+        }
+      }
+    }
+}
+
+// prekriziti text
+@mixin strikethrough(){
+  margin-bottom: 3%;
+  position: relative;
+
+  &:before {
+  width: 80%;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-15deg);
+  -moz-transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  -o-transform:rotate(-15deg);
+  transform:rotate(-15deg);
+}
+
+}
+
+
+
+//osnovna podesavanja linka: boja
+//
+
+@mixin link_style {
+  text-decoration: none;
+  color: black;
+
+
+  &:hover {
+    text-decoration: none;
+    color : black;
+  }
+
+  &:visited {
+     color : black;
+  }
+}
+
+//za dugme za -----zatvaranje
+@mixin close_button {
+  border: 1px solid black;
+  border-left: 2px solid gray;
+  border-bottom: 2px solid black;
+  background-color: #fff;
+
+  font-weight: 600;
+  padding: 3% 4%;
+  cursor: pointer;
+
+  @media (screen and min-width: 640px){
+  padding: 2% 3%;;
+  }
+
+  @media (screen and min-width: 992px){
+  padding: 1% 2%;;
+  }
+}
+
+// --za titlove----
+@mixin title {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+
+// --rotacija-----
+@mixin rotation($x){
+  -ms-transform: rotate($x); /* IE 9 */
+  -webkit-transform: rotate($x); /* Safari 3-8 */
+  transform: rotate($x);
+}

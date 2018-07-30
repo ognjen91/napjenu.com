@@ -1,0 +1,30 @@
+@import "reset";
+@import "defining";
+@import "mixins";
+@import 'calendar';
+
+@import 'login';
+@import 'nav';
+@import 'admin_index_content';
+
+@import 'view_room';
+@import 'view_facility';
+@import 'edit_calendars';
+@import 'edit_room_info';
+@import 'room_photos';
+@import 'add_new_img';
+@import 'create_new_room';
+
+@import 'create_new_facility';
+@import 'edit_facility';
+@import 'facility_photos';
+@import 'view_profile';
+@import 'edit_profile';
+
+
+
+
+.admin_wrap {
+  // width: 100vw;
+  // border: $gray1;
+}

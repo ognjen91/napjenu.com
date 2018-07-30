@@ -1,0 +1,216 @@
+
+//centrira sliku odredjene velicine
+// struktura: div u koji ukljucujemo ovaj mixin>image_holder>img
+@mixin flex_center_image($holder_width: 100%, $image_width: 100%){
+
+  justify-content: center;
+  align-items: center;
+
+    & .image_holder {
+  width: $holder_width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &>img{
+    width: $image_width;
+  }
+
+}
+
+
+}
+
+//centrira sliku odredjene velicine KOJA JE LINK
+//// struktura: div u koji ukljucujemo ovaj mixin>image_holder>a>img
+@mixin flex_center_a_image($holder_width: 100%, $image_width: 100%){
+
+  justify-content: center;
+  align-items: center;
+
+    &>.image_holder {
+  width: $holder_width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img{
+    width: $image_width;
+  }
+
+}
+
+
+}
+
+
+// za rezultate pretrazivanje
+
+@mixin result_box_css(){
+  padding: 5% 6%;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+//opcija, dugme
+
+@mixin option_box(){
+  padding: 3% 6%;
+  border: $black1;
+  text-align: center;
+  margin-bottom: 3%;
+
+  @media (screen and min-width: 640px){
+         padding: 2% 5%;
+         margin-bottom: 2%;
+         width: 60%;
+  }
+
+  @media (screen and min-width: 991px){
+         padding: 1% 5%;
+         margin-bottom: 0.5%;
+         width: 35%;
+  }
+}
+
+
+//stilizuje listu pogodnosti1
+// struktura div.amenity>(p+(div.image_holder>img))
+
+@mixin amenities_style1(){
+    display: flex;
+    flex-direction: column;
+
+    &>div{
+      display: flex;
+      margin-bottom: 5%;
+
+      @media (screen and min-width: 768px){
+              margin-bottom: 3%;
+      }
+
+      @media (screen and min-width: 992px){
+              margin-bottom: 2%;
+      }
+
+      @media (screen and min-width: 1200px){
+              margin-bottom: 1%;
+      }
+
+      &>p {
+        width:60%;
+        text-align: center;
+      }
+
+      &>div{
+        width: calc(20% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (screen and min-width: 768px){
+                width: calc(17% - 10px);
+        }
+
+        @media (screen and min-width: 992px){
+                width: calc(15% - 10px);
+        }
+
+        @media (screen and min-width: 1200px){
+                width: calc(12% - 10px);
+        }
+
+        &>img{
+          width: 21%;
+
+          @media (screen and min-width: 768px){
+                  width: 16%;
+          }
+
+          @media (screen and min-width: 992px){
+                  margin-bottom: 13%;
+          }
+
+          @media (screen and min-width: 1200px){
+                  margin-bottom: 11%;
+          }
+        }
+      }
+    }
+}
+
+
+@mixin input_style1 {
+  border: 5px solid white;
+   -webkit-box-shadow:
+     inset 0 0 8px  rgba(0,0,0,0.1),
+           0 0 16px rgba(0,0,0,0.1);
+   -moz-box-shadow:
+     inset 0 0 8px  rgba(0,0,0,0.1),
+           0 0 16px rgba(0,0,0,0.1);
+   box-shadow:
+     inset 0 0 8px  rgba(0,0,0,0.1),
+           0 0 16px rgba(0,0,0,0.1);
+   padding: 15px;
+   background: rgba(255,255,255,0.5);
+   margin: 0 0 10px 0;
+}
+
+
+
+
+@mixin status_gumb {
+
+    position: fixed;
+    bottom: 5%;
+    right: 8%;
+    width: 30%;
+
+
+
+  & .accept_msg {
+
+    display: none;
+    border-radius: 20%;
+    padding: 2%;
+    background:rgb(222, 140, 16);
+    color: rgb(16, 18, 17);
+    margin-bottom: 7%;
+    font-size: 1.2em;
+
+  }
+
+  & .accept_btn {
+    color: #fff;
+
+    padding: 4% 3%;
+    background-color: rgb(28, 27, 25);
+    color: rgb(227, 238, 233);
+    border-radius: 20%;
+  }
+
+}
+
+@mixin add_new_btn(){
+  & .image_holder {
+    width: 12%;
+
+    @media (screen and min-width: 460px){
+           width: 10%;
+    }
+    @media (screen and min-width: 640px){
+           width: 8%;
+    }
+    @media (screen and min-width: 768px){
+           width: 7%;
+    }
+
+    @media (screen and min-width: 992px){
+           width: 6%;
+    }
+    @media (screen and min-width: 1200px){
+           width: 5%;
+    }
+  }
+}

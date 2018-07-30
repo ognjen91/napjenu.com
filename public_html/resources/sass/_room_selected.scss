@@ -1,0 +1,156 @@
+.room_selected {
+  display: none;
+  width: 100vw;
+  // height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 100;
+
+}
+
+.rs_holder{
+  padding: 2%;
+
+  @media (screen and min-width: 992px){
+    display: flex;
+      flex-wrap: wrap;
+ align-items:flex-start;
+    padding: 0 2%;
+  }
+}
+
+.rs_close{
+  @include close_button;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+
+}
+
+.rs_titles {
+  display: flex;
+  flex-direction: column;
+
+  margin: 5% 0 8% 4%;
+
+  @media (screen and min-width: 768px){
+
+    margin: 4% 0 6% 4%;
+  }
+
+  @media (screen and min-width: 992px){
+
+  margin: 2% 0 4% 4%;
+  }
+
+  @media (screen and min-width: 1200px){
+
+  // margin: 1% 0 4% 4%;
+  }
+  &>.titles{
+
+margin-bottom: 4%;
+@media (screen and min-width: 992px){
+
+  margin-bottom: 2%;
+}
+
+
+    &>div{
+      margin-bottom: 1%;
+      font-weight: 600;
+
+      &:not(:first-of-type){
+        font-size: 90%;
+      }
+
+      &>p{
+        @include title;
+
+
+      }
+    }
+  }
+
+  & .rs_options{
+    width: 50%;
+    justify-content: flex-start;
+    display: flex;
+    @media (screen and min-width: 992px){
+
+      width: 35%;
+    }
+
+
+    &>div{
+      // border: $green1;
+      width: 23%;
+      display: flex;
+      flex-direction: column;
+      @media (screen and min-width: 640px){
+      width: 20%;
+      }
+
+      @media (screen and min-width: 768px){
+      width: 18%;
+      }
+      @media (screen and min-width: 992px){
+      width: 21%;
+      }
+
+
+      & p{
+        @media (screen and max-width: 992px){
+          display: none;
+        }
+
+        font-size: 60%;
+      text-align: center;
+        }
+    }
+
+    &>.rs_option1{
+
+      &>div{
+        display: flex;
+        @include flex_center_image(32%);
+        justify-content: flex-start;
+
+
+      }
+
+    }
+
+    &>.rs_option2, .rs_option3, .rs_option4, .rs_option5{
+
+      &>div{
+        display: flex;
+        @include flex_center_a_image(32%);
+        justify-content: flex-start;
+      }
+
+    }
+
+
+
+
+  }
+
+}
+
+
+
+.rs_am_desc {
+  display: flex;
+  margin-bottom: 7%;
+  border-bottom: $gray1;
+
+  @media (screen and min-width: 768px){
+  display: flex;
+  justify-content: space-between;
+
+  }
+}

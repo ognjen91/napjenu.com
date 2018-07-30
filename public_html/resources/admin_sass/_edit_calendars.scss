@@ -1,0 +1,103 @@
+
+
+.ec_select {
+  margin-top: 10%;
+  display: flex;
+
+  &>div{
+    width: 49%;
+    // border: $red1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.ec_main {
+  position: relative;
+  padding: 2%;
+
+  @media (screen and min-width: 992px){
+       padding: 1% 5%;
+
+  }
+}
+
+.ec_month{
+
+}
+
+.ec_year{
+  padding: 2%;
+  // border: $red2;
+    position: relative;
+}
+
+
+
+.ec_month_holder{
+  // border: $blue2;
+  margin-bottom: 8%;
+  border-bottom: $black1;
+  padding: 2%;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+
+  visibility: hidden;
+
+
+
+  & h2{
+    margin-bottom: 4%;
+    text-align: center;
+  }
+}
+
+
+.ec_date{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: calc(100% / 7 - 6px);
+  margin: 2px;
+
+
+}
+
+.ec_empty {
+  color: rgb(181, 172, 181);
+  background-color: rgb(181, 172, 181);
+  visibility: hidden;
+}
+
+.ec_date_info{
+
+
+
+}
+
+.ec_what {
+  font-size: 10px;
+
+  @media (screen and min-width: 992px){
+       font-size: 15px;
+
+  }
+
+  &:nth-of-type(1) {
+    font-size: 8px;
+
+    @media (screen and min-width: 992px){
+         font-size: 12px;
+
+    }
+  }
+}
+
+
+
+
+.ec_status{
+  @include status_gumb;
+}

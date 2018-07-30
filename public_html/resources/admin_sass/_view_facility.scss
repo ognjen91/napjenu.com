@@ -1,0 +1,156 @@
+.vf_holder {
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+
+}
+
+.vf_infos {
+
+display: flex;
+flex-direction: column;
+margin-bottom: 5%;
+
+@media (screen and min-width: 992px){
+     margin-bottom: 2%;
+}
+
+}
+
+.vf_image{
+  display: flex;
+  flex-direction: column;
+  // border: $green1;
+  justify-content: center;
+}
+
+.vf_profile_img {
+  display: flex;
+  width: 100%;
+  @include flex_center_image(70%);
+
+  @media (screen and min-width: 992px){
+         @include flex_center_image(45%);
+  }
+
+  @media (screen and min-width: 1200px){
+         @include flex_center_image(35%);
+  }
+}
+
+.vf_info {
+  display: flex;
+  flex-direction: column;
+  width: calc(70%-10px);
+  padding-top: 3%;
+
+  &>div {
+    margin-bottom: 3%;
+  }
+
+  &:not(:last_of_type){
+    margin-bottom: 7%;
+
+    @media (screen and min-width: 640px){
+           margin-bottom: 3%;
+    }
+  }
+
+
+}
+
+.vf_image {
+
+}
+
+
+
+// ====opcije=======
+.ef_options{
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (screen and min-width: 768px){
+         margin-bottom: 2%;
+  }
+
+  @media (screen and min-width: 992px){
+         margin-bottom: 1%;
+  }
+
+}
+
+.vf_go {
+@include option_box();
+
+  &:not(#ef_options){
+    display: none;
+  }
+}
+
+
+
+.vf_rooms {
+  border-top: $black1;
+  margin-top: 2%;
+  padding: 3% 0;
+
+  @media (screen and min-width: 768px){
+         padding: 2% 0;
+  }
+
+
+
+  &>h3{
+    font-size: 1.5em;
+    margin-bottom: 8%;
+
+    @media (screen and min-width: 992px){
+         margin-bottom: 4%;
+  }
+  }
+
+
+}
+
+.vf_rooms_holder{
+  @media (screen and min-width: 992px){
+         display: flex;
+         flex-wrap: wrap;
+  }
+}
+
+.vf_room {
+  display: flex;
+  margin-bottom: 6%;
+  border: $black1;
+  @include result_box_css();
+
+  @media (screen and min-width: 768px){
+         padding: 2% 0;
+  }
+  @media (screen and min-width: 992px){
+         width: 46%;
+         margin: 1%;
+  }
+
+}
+
+.vf_room_img{
+  width: 30%;
+  display: flex;
+  @include flex_center_image(90%);
+}
+
+.vf_room_info {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.vf_go_room{
+  width: 25%;
+  displayname: flex;
+  @include flex_center_a_image(70%);
+}

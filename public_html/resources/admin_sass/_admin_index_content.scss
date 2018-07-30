@@ -1,0 +1,126 @@
+.admin_index_content{
+  // padding: 7% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.hello_admin {
+  padding: 2%;
+  margin-bottom: 10%;
+}
+
+
+.ai_options{
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5%;
+
+  @media (screen and min-width: 992px){
+  margin-bottom: 2%;
+
+  }
+}
+
+.ai_add{
+  display: flex;
+  @include flex_center_a_image(12%);
+
+  @media (screen and min-width: 460px){
+     @include flex_center_a_image(10%);
+
+  }
+  @media (screen and min-width: 640px){
+     @include flex_center_a_image(8%);
+
+  }
+
+  @media (screen and min-width: 992px){
+     @include flex_center_a_image(6%);
+
+  }
+  @media (screen and min-width: 992px){
+     @include flex_center_a_image(5%);
+
+  }
+}
+
+
+.title1{
+  text-decoration: underline;
+  margin-bottom: 5%;
+  text-align: center;
+  font-family: $titles;
+  letter-spacing: 2px;
+
+  @media (screen and min-width: 640px){
+       font-size: 115%;
+
+  }
+}
+
+// ============ADMIN LISTING OBJEKATA============
+
+
+.show_facilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (screen and min-width: 992px){
+     flex-direction: row;
+
+  }
+}
+
+.ai_facility {
+  display: flex;
+  margin-bottom: 7%;
+  border: $black2;
+  padding: 7% 2%;
+  justify-content: space-between;
+  width: 80%;
+
+  @media (screen and min-width: 992px){
+       width: 45%;
+       margin: 2%;
+  }
+
+}
+
+.ai_image{
+  width: 30%;
+  display: flex;
+  font-family: $font2;
+  letter-spacing: 1px;
+
+  @include flex_center_image(80%);
+}
+
+.ai_basic_info {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  & p {
+    margin-bottom: 5%;
+  }
+}
+
+.ai_go {
+  float: right;
+  width: 25%;
+ display: flex;
+ // border: $red1;
+  @include flex_center_a_image(40%);
+
+& .image_holder {
+  // border: $green1;
+ float: right;
+}
+
+}

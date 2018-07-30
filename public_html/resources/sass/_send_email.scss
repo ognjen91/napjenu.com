@@ -1,0 +1,83 @@
+.close_email{
+  // float: right;
+  // position: relative;
+  display: flex;
+  // justify-content: flex-end;
+  align-items: flex-end;
+
+  &>div{
+    align-self: flex-end !important;
+    @include close_button;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    border: $black1;
+    padding: 2%;
+  }
+}
+
+.send_email{
+  padding : 2% 0;
+  z-index: 10000;
+  position: absolute;
+  top: 0%;
+  left: -102%;
+  width: 100vw;
+
+  background-color: #fff;
+  // border: $blue1;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &>div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: $red2;
+    margin-bottom: 5%;
+
+
+    &>p{
+      text-align: center;
+      font-family: $font1;
+      margin-bottom: 1%;
+    }
+
+    &>textarea{
+      width: 75%;
+      height: 30vh;
+    }
+
+    &>.send_the_email{
+      padding: 2% 5%;
+      border: $black1;
+
+    }
+
+
+  }
+}
+
+
+
+.show_email{
+  animation-fill-mode:forwards;
+    -webkit-animation-name: show_email; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: show_email;
+    animation-duration: 1s;
+
+}
+
+.hide_email{
+  animation-fill-mode:forwards;
+  -webkit-animation-name: hide_email; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: hide_email;
+    animation-duration: 1s;
+
+}

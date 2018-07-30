@@ -1,0 +1,36 @@
+.rs_arrangement_info {
+  margin-bottom: 10%;
+
+
+  @media (screen and min-width: 640px){
+margin-bottom: 7%;
+
+  }
+
+  @media (screen and min-width: 992px){
+margin: 10% 0;
+order: 1;
+  }
+  // border-bottom: $black1;
+}
+
+.is_possible, .isnt_possible, .select_date {
+  display: none;
+
+  font-family: $font1;
+  text-align: center;
+}
+
+
+.is_possible {
+  color : rgb(78, 136, 182)
+}
+
+.isnt_possible {
+  color: rgb(235, 77, 77)
+}
+
+.select_date{
+  // color : rgb(0, 0, 0);
+  font-size: 80%;
+}

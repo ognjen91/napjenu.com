@@ -1,0 +1,35 @@
+.login_window{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: $blue1;
+  padding: 15% 0;
+
+  @media (screen and min-width: 640px){
+       padding: 10% 0;
+
+  }
+
+  @media (screen and min-width: 992px){
+       padding: 7% 0;
+
+  }
+
+  &>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & input{
+      margin-bottom: 8%;
+    }
+
+    & [type='submit'] {
+      padding: 2% 5%;
+      width: 30%;
+
+    }
+  }
+}

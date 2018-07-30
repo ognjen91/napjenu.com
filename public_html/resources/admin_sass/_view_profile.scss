@@ -1,0 +1,42 @@
+.vp_holder{
+  padding: 2%;
+}
+
+.vp_user_infos{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8%;
+
+  &>div{
+    padding: 2%;
+  }
+
+
+      &:nth-of-type(2n){
+        background-color: rgb(218, 217, 227);
+      }
+}
+
+.vp_what{
+  margin-bottom: 1%;
+  text-decoration: underline;
+}
+
+.vp_output{
+  font-weight: 700;
+  font-size: 110%;
+}
+
+
+.vp_options{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 80%;
+  
+}
+
+.vp_add{
+  display: flex;
+  @include flex_center_a_image(10%);
+}

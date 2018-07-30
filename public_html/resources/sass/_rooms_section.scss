@@ -1,0 +1,174 @@
+.all_rooms{
+  @media (screen and min-width: 992px){
+    width: 80%;
+    order: 1;
+    // border: $green1;
+  }
+}
+
+.rooms_section{
+
+  @media (screen and min-width: 768px){
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+.rooms_title{
+  width: 90%;
+
+  font-family: $titles;
+  padding-bottom: 5%;
+  font-size: 110%;
+  letter-spacing: 2px;
+
+  &:nth-of-type(2n){
+    border-bottom: $black1;
+  }
+  &:nth-of-type(1){
+    font-size: 95%;
+  }
+
+  @media (screen and min-width: 768px){
+  padding-bottom: 3%;
+  margin-bottom: 2.5%;
+  }
+
+  @media (screen and min-width: 992px){
+    font-size: 120%;
+    margin-left: 2%;
+  }
+
+}
+
+#room_structure {
+  display: none;
+}
+
+.room {
+  border: $result_border;
+  margin-top: 4%;
+  padding: 3% 2%;
+
+  @media (screen and min-width: 768px){
+    width: calc(50% - 4% - 5px);
+    margin: 3% 2% 0 2%;
+  padding: 2% 1%
+  }
+
+  @media (screen and min-width: 992px){
+    width: calc(50% - 4% - 5px);
+    margin: 2% 2% 0 2%;
+  padding: 1.5% 1%
+  }
+}
+
+.room_holder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 4%;
+
+  &>div{
+    // border: $black1;
+  }
+}
+
+.room_owner {
+width: 100%;
+text-align: right;
+margin-bottom: 2%;
+font-size: 85%;
+
+
+& a{
+ @include link_style;
+ text-decoration: underline;
+}
+}
+
+
+.room_profile_img {
+  width: 30%;
+  display: flex;
+  @include flex_center_image(90%);
+  @media (screen and min-width: 992px){
+  @include flex_center_image();
+}
+
+}
+
+.room_infos {
+  padding-left: 3%;
+  width: 55%;
+
+
+
+  & p {
+    font-size: 85%;
+    font-family: $font2;
+    @media (screen and min-width: 640px){
+    font-size: 100%;
+
+    @media (screen and min-width: 768px){
+    margin-bottom: 2%;
+  }
+
+    }
+  }
+
+  & .suite{
+    font-size: 100%;
+    letter-spacing: 1px;
+    // font-weight: 600;
+    font-family: $titles;
+    @media (screen and min-width: 640px){
+    font-size: 110%;
+    }
+  }
+
+  & .the_place {
+    margin-bottom: 4%;
+  }
+
+}
+
+.view_room {
+  width: 6%;
+  display: flex;
+  @include flex_center_image(100%);
+  // border: $black1;
+  float: right;
+
+  @media (screen and min-width: 640px){
+  @include flex_center_image(80%)
+  }
+}
+
+
+.room_social {
+  @media (screen and max-width: 639px){
+  display: none;
+  }
+
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3%;
+  margin-left: 12%;
+
+  &>div{
+    width: 4%;
+    display: flex;
+    @include flex_center_a_image(70%);
+
+    @media (screen and min-width: 768px){
+    width: 8%;
+    }
+  }
+
+
+
+}

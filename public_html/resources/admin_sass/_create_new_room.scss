@@ -1,0 +1,53 @@
+.create_room_title {
+  font-size: 120%;
+  text-align: center;
+  font-family:  $font2;
+}
+
+.cn_holder{
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+
+  font-family:  $font1;
+}
+
+.cn_init_data {
+  display: flex;
+  flex-direction: column;
+
+  &>div{
+    margin: 2%;
+  }
+
+  &>:nth-of-type(2n){
+    background-color: rgb(218, 217, 227);
+  }
+}
+
+.cn_descriptions{
+  display: flex;
+  flex-direction: column;
+
+  &>div{
+
+    margin-bottom: 4%;
+    padding: 2%;
+  }
+
+  &>:nth-of-type(2n){
+    background-color: rgb(218, 217, 227);
+  }
+
+  & textarea{
+    border: $black1;
+  }
+}
+
+.cr_others>textarea{
+
+  height: 20vh;
+}
+.cr_desc>textarea{
+  height: 40vh;
+}

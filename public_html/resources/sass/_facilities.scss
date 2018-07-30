@@ -1,0 +1,156 @@
+.fac_wrap{
+  display: flex;
+  flex-direction: column;
+  padding-top: 8%;
+
+  @media (screen and min-width: 768px){
+  margin-bottom: 5%;
+  }
+}
+
+.fac_chose_place {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8%;
+  @media (screen and min-width: 768px){
+  margin-bottom: 6%;
+  }
+
+  @media (screen and min-width: 992px){
+  margin-bottom: 3%;
+  }
+
+  &>p{
+    font-family: $font2;
+    letter-spacing: 2px;
+    width: 25%;
+    vertical-align: center;
+    // border: $black1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+  }
+  &>select {
+    width: 50%;
+  }
+}
+
+.fac_title{
+  font-family: $font2;
+  left: 1px;
+  margin-left:  5%;
+  margin-bottom: 5%;
+  width: 75%;
+  border-bottom: $black1;
+  padding-bottom: 3%;
+}
+
+
+.facilities_section{
+  display: flex;
+  flex-direction: column;
+  @media (screen and min-width: 640px){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.new_facility {
+  margin-bottom: 5%;
+  padding: 3% 2%;
+  border-top: $result_border;
+  border-bottom: $result_border;
+  border-bottom: $black1;
+
+  @media (screen and min-width: 640px){
+    width: calc(50% - 4% - 5px);
+    margin: 2%;
+  }
+
+  @media (screen and min-width: 768px){
+    width: calc(50% - 4% - 5px);
+    margin: 2% 2% 0 2%;
+    padding: 4% 3%;
+  }
+
+  @media (screen and min-width: 992px){
+
+    padding: 1% 2%;
+  }
+}
+
+.facility_holder{
+  display: flex;
+}
+
+.facility_profile_img{
+  width: 30%;
+  display: flex;
+  @include flex_center_a_image(80%);
+
+  @media (screen and min-width: 640px){
+  width: 35%;
+  }
+}
+
+.facility_infos{
+  margin-left: 3%;
+& p {
+  font-size: 85%;
+  font-family: $font2;
+  @media (screen and min-width: 640px){
+  font-size: 95%;
+  }
+}
+
+  & .facility_name{
+font-size: 100%;
+
+@media (screen and min-width: 640px){
+font-size: 110%;
+}
+
+letter-spacing: 1px;
+font-family: $titles;
+  }
+
+  width: 59%;
+  display: flex;
+  flex-direction: column;
+
+  &>div{
+    margin-bottom: 4%;
+  }
+}
+
+.the_facility {
+  margin-right: 10%;
+  display: flex;
+  // border: $black1;
+  width: 10%;
+  @include flex_center_a_image(52%);
+
+  @media (screen and min-width: 640px){
+    @include flex_center_a_image(76%);
+  }
+
+  @media (screen and min-width: 768px){
+    margin-right: 4%;
+  }
+}
+
+
+.fac_social{
+  @media (screen and max-width: 992px){
+    display: none;
+  }
+
+  display: flex;
+  justify-content: flex-end;
+  &>div {
+    display: flex;
+    @include flex_center_a_image(50%);
+    width: 10%;
+  }
+}

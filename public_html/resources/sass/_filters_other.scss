@@ -1,0 +1,153 @@
+.filters_title{
+    @media (screen and max-width: 991px){
+display: none;
+    }
+    width: 100%;
+    order: 2;
+    font-family: $titles;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.filters_other{
+  // display: flex;
+  //
+  @media (screen and min-width: 992px){
+  // flex-direction: column;
+  width: 100%;
+  order: 2;
+  border: 1px solid rgb(224, 217, 213);
+  padding: 2%;
+  float: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+  // height: 20vh;
+
+  }
+
+
+}
+
+
+.all_filters{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.5%;
+  // border: $red2;
+  padding-top: 3%;
+
+  @media (screen and min-width: 460px){
+  margin-bottom: 2%;
+  }
+  @media (screen and min-width: 768px){
+  margin-bottom: 1%;
+  }
+
+  @media (screen and min-width: 992px){
+  padding: 10% 0;
+  // border: $red1;
+  }
+ // border: $black1;
+
+  &>div{
+    width: 33%;
+    // border: $green1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: 85%;
+
+    @media (screen and min-width: 640px){
+    width: 25%;
+    margin-bottom: 2%;
+    }
+    @media (screen and min-width: 768px){
+
+    margin-bottom: 1%;
+    }
+    @media (screen and min-width: 992px){
+  width: 49%;
+    margin-bottom: 4%;
+    }
+
+    &>p{
+      text-align: center;
+      font-family: $font2;
+
+      font-size: 90%;
+      @media (screen and min-width: 640px){
+      font-size: 100%;
+      }
+
+      @media (screen and min-width: 992px){
+      font-size: 110%;
+      margin-bottom: 3%;
+      }
+    }
+
+
+  }
+}
+
+.beds{
+  // width: 100% !important;
+  // border: $red1;
+  text-align: center;
+
+  &>select{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+.search_button{
+
+  width: 40%;
+
+  @media (screen and min-width: 992px){
+
+margin: 8% auto;
+
+  order: 1;
+  // margin: 3% 0;
+  }
+
+  // border: $black1;
+  display: block;
+  margin: 0 auto;
+
+  &>button{
+    // font-weight: 600;
+    padding:  5% 8%;
+    font-family: $titles;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    background-color: $cal_only_day;
+    border-radius: 5%;
+
+
+    @media (screen and min-width: 640px){
+    padding:  5% 12%;
+    font-size: 110%;
+    }
+
+    @media (screen and min-width: 640px){
+    padding:  2% 10%;
+    font-size: 110%;
+    }
+
+    @media (screen and min-width: 992px){
+    padding:  8% 10%;
+
+    }
+  }
+
+}

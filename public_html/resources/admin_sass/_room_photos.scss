@@ -1,0 +1,105 @@
+.rp_options{
+  margin: 5% 2% 7% 2%;
+  display: flex;
+  flex-direction: column;
+
+
+  @media (screen and min-width: 992px){
+           margin: 0% 2% 3% 2%;
+  }
+
+  &>div {
+    text-align: center;
+    font-size: 80%;
+  }
+}
+
+.rp_add{
+
+  display: flex;
+  @include flex_center_a_image();
+    @include add_new_btn();
+  cursor: pointer;
+}
+
+.prof_title {
+margin-bottom: 5%;
+@media (screen and min-width: 768px){
+    margin-bottom: 2%;
+}
+
+
+  &>h4, &>p{
+      text-align: center;
+  }
+
+  &>h4{
+    text-decoration: underline;
+  }
+
+  &>p{
+    font-size: 80%;
+  }
+
+}
+
+.pr_profile_img {
+  padding: 4%;
+  display: flex;
+  @include flex_center_image(70%);
+  margin-bottom: 8%;
+
+  @media (screen and min-width: 768px){
+         @include flex_center_image(40%);
+  }
+}
+
+.rp_other_images{
+  display: flex;
+  flex-direction: column;
+  &>:nth-of-type(2n){
+    background-color: rgb(218, 217, 227);
+  }
+}
+
+.oth_title{
+  margin-bottom: 6%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.rp_other{
+  display: flex;
+  margin-bottom: 5%;
+
+
+}
+
+.rp_other_img{
+  width: 60%;
+  display: flex;
+  @include flex_center_image(70%);
+
+  @media (screen and min-width: 768px){
+         @include flex_center_image(20%);
+  }
+}
+
+.rp_delete, .rp_profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+.rp_status{
+  @include status_gumb;
+}
+
+.rp_accept{
+  visibility: hidden;
+}

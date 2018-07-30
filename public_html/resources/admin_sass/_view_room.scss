@@ -1,0 +1,121 @@
+.vr_holder{
+  display: flex;
+  flex-direction: column;
+  padding: 0 3%;
+}
+
+
+.vr_images{
+  margin-bottom: 5%;
+}
+
+.admin_vr_profile_img {
+  width: 100%;
+  // padding: 4%;
+  display: flex;
+  @include flex_center_image(55%);
+
+       @include flex_center_image(35%);
+  }
+
+
+.view_room_profile_img{
+  display: flex;
+  @include flex_center_image(80%);
+
+  @media (screen and min-width: 768px){
+           @include flex_center_image(65%);
+  }
+
+  @media (screen and min-width: 992px){
+           @include flex_center_image(55%);
+  }
+
+  @media (screen and min-width: 1200px){
+    @include flex_center_image(48%);
+
+
+}
+}
+
+
+.vr_other_images{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
+
+  border-bottom: $black1;
+}
+
+.vr_other_img{
+  width: 20%;
+  @include flex_center_image(90%);
+  margin-bottom: 2%;
+
+  @media (screen and min-width: 992px){
+           @include flex_center_image(70%);
+  }
+
+  @media (screen and min-width: 1200px){
+         @include flex_center_image(55%);
+  }
+}
+
+.vr_options{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3% 5%;
+}
+
+.vr_go {
+
+ @include option_box();
+
+  &:not(#vr_options){
+    display: none;
+  }
+}
+
+
+// ========POGODNOSTI==============
+
+
+.vr_listed_amenities {
+  @include amenities_style1();
+  margin-bottom: 5%;
+
+  @media (screen and min-width: 768px){
+           margin-bottom: 3%;
+  }
+    @media (screen and min-width: 992px){
+             margin-bottom: 1%;
+    }
+      @media (screen and min-width: 1200px){
+               margin-bottom: 3%;
+      }
+
+}
+
+
+.vr_descriptions {
+   display: flex;
+   flex-direction: column;
+   padding: 0 3%;
+   &>div{
+     margin-bottom: 5%;
+
+    &:nth-of-type(2n){
+      background-color: rgb(218, 217, 227);
+    }
+
+
+
+   }
+}
+
+.vr_what {
+  margin-bottom: 3%;
+  font-size: 1.1;
+  font-weight: 700;
+}

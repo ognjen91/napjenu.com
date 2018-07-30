@@ -1,0 +1,10 @@
+.ef_status{
+  @include status_gumb;
+}
+
+.ef_descriptions {
+  &>div>textarea{
+    border: $black1;
+
+  }
+}

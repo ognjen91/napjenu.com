@@ -1,0 +1,31 @@
+.cn_init_data{
+
+
+  &>div{
+    padding: 2%;
+    @media (screen and min-width: 992px){
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+
+    @media (screen and min-width: 992px){
+           padding: 1%;
+    }
+
+    &>p{
+      margin-bottom: 2%;
+
+      @media (screen and min-width: 992px){
+             margin-bottom: 1%;
+      }
+    }
+  }
+}
+
+.create_new_fac {
+  @media (screen and min-width: 992px){
+         width: 40%;
+         padding: 2% 5%;
+  }
+}

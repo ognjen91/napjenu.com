@@ -1,0 +1,41 @@
+.er_field {
+ margin-bottom: 3%;
+ padding: 2% 4%;
+
+ @media (screen and min-width: 768px){
+        padding: 1% 4%;
+ }
+
+  &:nth-of-type(2n){
+    background-color: rgb(218, 217, 227);
+  }
+
+  &>p{
+    margin: 2%;
+
+    @media (screen and min-width: 768px){
+           margin: 1%;
+    }
+  }
+}
+
+
+textarea {
+  width: 80%;
+  @include input_style1;
+
+}
+
+.er_other {
+  height: 15vh;
+
+}
+
+.er_descriptions {
+  height: 40vh;
+}
+
+
+.er_status{
+  @include status_gumb;
+}

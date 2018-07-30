@@ -1,0 +1,79 @@
+.rs_contact {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 0 5% 5%;
+// border: $red1;
+&>div{
+  display: flex;
+  margin-bottom: 4%;
+  @media (screen and min-width: 768px){
+  width: calc(100% / 3 - 10px) !important;
+  margin: 0;
+  // border: $red1;
+}
+
+& p{
+
+  @media (screen and min-width: 768px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+}
+  }
+
+
+  & p {
+      font-size: 90%;
+  }
+
+  &>div:not(:nth-child(3)){
+width: 100%;
+@media (screen and min-width: 640px){
+width: 50%;
+}
+    // border: $black1;
+
+
+
+    &>a{
+      width: 60%;
+      display: flex;
+      @include link_style;
+    }
+
+    &>a>p{
+
+
+    }
+
+    &>a>div{
+      width: 20%;
+      display: flex;
+      @include flex_center_image(20%);
+
+      @media (screen and min-width: 640px){
+@include flex_center_image(40%);      }
+    }
+  }
+}
+
+.rs_message {
+width: 100%;
+
+display: flex;
+
+
+
+
+  &>div{
+
+    width: 20%;
+    display: flex;
+    @include flex_center_image(20%);
+}
+}

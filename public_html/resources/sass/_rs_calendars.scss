@@ -1,0 +1,180 @@
+.rs_calendars{
+
+  &>p, &>h4{
+    @media (screen and max-width: 992px){
+        display: none;
+      }
+      text-align: center;
+      margin-bottom: 2%;
+  }
+
+  &>p{
+    font-family: $font2;
+  }
+
+  &>h4{
+    font-family: $font2;
+  }
+
+  width: 100vw;
+
+  @media (screen and min-width: 992px){
+      display: flex;
+      margin-bottom: 5%;
+      width: 30%;
+
+      flex-direction: column;
+  }
+
+  &>div{
+
+    width: 100vw;
+    @media (screen and min-width: 992px){
+        width: 100%;
+
+
+    }
+
+  }
+}
+
+.rs_month_calendar{
+  @media (screen and min-width: 992px){
+  width: 100%;
+
+  }
+}
+
+.rs_arr_calendar{
+  // display: none;
+}
+
+
+.rs_calendar_holder{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  @media (screen and min-width: 992px){
+      width: 100%;
+
+
+  }
+}
+
+
+.rs_date_show{
+  padding: 3% 1%;
+  width: 80%;
+  margin-bottom: 3%;
+  border: $gray1;
+  font-size: 80%;
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+
+  @media (screen and min-width: 640px){
+      width: 60%;
+      padding: 2% 1%;
+      margin-bottom: 1.5%;
+  }
+
+  @media (screen and min-width: 992px){
+   width: 95%;
+   margin-bottom: 5%;
+  }
+
+  &>p{
+    // border: $red1;
+    text-align: center;
+  }
+}
+
+.rs_show_calendar, .rs_null_calendar{
+  // border: $red1;
+  float: right;
+  width: 10%;
+  display: flex;
+  @include flex_center_image(40%);
+  @media (screen and min-width: 460px){
+      width: 8%;
+
+  }
+
+  @media (screen and min-width: 640px){
+      width: 6.5%;
+
+  }
+
+}
+
+.rs_month_calendar {
+  padding: 2%;
+  height: 100vh;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  // border: $black1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+
+    @media (screen and min-width: 768px){
+      // display: flex;
+      position: inherit;
+      height: inherit;
+      width: 60%;
+    }
+
+    @media (screen and min-width: 992px){
+      // display: flex;
+      width: 100%;
+    }
+  // display: none;
+  // z-index: 50;
+}
+
+.rs_arr_calendar{
+  @media (screen and min-width: 992px){
+    order: 2;
+  }
+}
+
+.rs_dep_calendar{
+  @media (screen and min-width: 992px){
+    order : 3;
+  }
+}
+
+.rs_calendar_title{
+  width: 80%;
+  font: $font2;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 5%;
+  border-bottom: $black1;
+
+  @media (screen and min-width: 768px){
+  display: none;
+}
+}
+
+.rs_close_calendar {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2%;
+  border: $black1;
+
+  @media (screen and min-width: 768px){
+  position: inherit;
+  align-self: flex-end;
+}
+}

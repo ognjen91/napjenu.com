@@ -1,0 +1,26 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes show_email {
+    from {left: -100%;}
+    to {left: 0;}
+}
+
+/* Standard syntax */
+@keyframes show_email {
+  from {left: -100%;}
+  to {left: 0;}
+}
+
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hide_email {
+  
+    from {left: 0}
+    to {left: -100;}
+}
+
+/* Standard syntax */
+@keyframes hide_email {
+  from {left: 0%;}
+  to {left: -100%;}
+}

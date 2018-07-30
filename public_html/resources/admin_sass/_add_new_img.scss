@@ -1,0 +1,23 @@
+.ap_holder{
+  padding: 4%;
+}
+
+.ap_new {
+  margin: 3%;
+}
+
+.ap_new_field{
+display: flex;
+margin: 8%;
+
+  &>.ap_add{
+    display: flex;
+  @include flex_center_image(10%);
+}
+}
+
+.ap_proceed {
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+}

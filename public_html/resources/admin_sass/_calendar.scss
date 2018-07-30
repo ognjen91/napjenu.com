@@ -1,0 +1,29 @@
+.month {
+  display: flex;
+  flex-wrap: wrap;
+  // border: $red1;
+  justify-content: flex-start;
+
+}
+
+.date {
+  width: calc(100% / 7 - 4px);
+
+  border: $black1;
+  // padding: 5%;
+}
+
+div[data-availability='1']{
+  background: rgb(143, 204, 105);
+
+}
+div[data-availability='1']{
+  background: rgb(143, 204, 105);
+
+}
+
+
+div[data-availability='']{
+  background: rgb(233, 91, 59);
+
+}

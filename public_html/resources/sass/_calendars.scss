@@ -1,0 +1,189 @@
+
+
+
+.month_calendar{
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar_info{
+  display: flex;
+  margin-bottom: 5%;
+  // width: 75%;
+
+  &>div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 3%;
+    &>select{
+      padding: 0.5%;
+      font-family: $font1;
+    }
+
+    // border: $red1;
+  }
+}
+
+
+.calendar{
+  display: flex;
+  flex-wrap: wrap;
+  // border: $blue1;
+
+
+  &>div{
+    width: calc(100%/7 - 1%);
+    border: $result_border;
+    justify-content: center;
+    text-align: center;
+    margin: 0.2% 0.1%;
+
+
+  }
+
+  &>div:not(.rs_day){
+
+    padding: 3%;
+    @media (screen and min-width: 768px){
+        padding: 1%;
+
+    }
+
+
+  }
+
+  &>.rs_day{
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    @media (screen and min-width: 768px){
+        padding: 1%;
+
+    }
+
+  }
+}
+
+
+.date{
+  // background: $date_color;
+}
+
+.only_date {
+  font-size: 95%;
+  color: rgb(12, 24, 26);
+  font: $font1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $cal_only_day;
+}
+
+
+.empty_day {
+  background: #fff !important;
+}
+
+
+.ava_day{
+  background-color: $ava_day_col;
+
+}
+
+.unava_day{
+  background-color: $unava_day_col;
+}
+
+[data-selected='true']{
+  background-color: $selected_day_col;
+  color: #fff;
+}
+
+
+
+.discount_sign, .price_with_discount{
+  display: none;
+
+}
+
+.ava_day:not([data-discount='0']){
+  background-color: $day_with_discount;
+
+
+  & .discount_sign{
+    display: flex;
+    @include flex_center_image(30%);
+    // border: $red1;
+    width: 100%;
+    justify-content: flex-end;
+    position: relative;
+
+    &>div{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  & .rs_price{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  & .price_no_discount{
+    width: 100%;
+    font-size: 50%;
+    @include strikethrough;
+  }
+
+
+  & .price_with_discount{
+    display: inline;
+    font-size: 65%;
+    color: red;
+  }
+
+  & .rs_e{
+    font-size: 60%;
+  }
+
+}
+
+
+.day_no {
+  padding-top:  28%;
+
+  @media (screen and min-width: 768px){
+    padding-top:  10%;
+  }
+  @media (screen and min-width: 992px){
+    padding-top:  4%;
+  }
+}
+
+.price_no_discount{
+  font-size: 70%;
+
+}
+
+.rs_e {
+  font-size: 70%;
+}
+
+.today{
+  background-color: $today_color;
+}
+
+
+// ==kada je danasnji dan zauzet i kada nije
+.unava_day.today{
+  background: linear-gradient($today_color, $unava_day_col);
+}
+
+.ava_day.today{
+  background: linear-gradient($today_color, $ava_day_col);
+}

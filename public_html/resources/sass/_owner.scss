@@ -1,0 +1,121 @@
+.owner_wrap{
+  padding: 7% 4%;
+
+
+    @media (screen and min-width: 768px){
+  padding: 3% 4%;
+    }
+}
+
+.owner_infos{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8%;
+  font-family: $font2;
+
+  @media (screen and min-width: 460px){
+margin-bottom: 6%;
+  }
+
+  @media (screen and min-width: 768px){
+margin-bottom: 4%;
+  }
+
+
+  &>div{
+    margin-bottom: 4%;
+
+      @media (screen and min-width: 768px){
+    margin-bottom: 2%;
+      }
+
+      @media (screen and min-width: 992px){
+    margin-bottom: 1%;
+      }
+  }
+}
+
+
+.owner_facilities_n_rooms{
+
+  @media (screen and min-width: 768px){
+
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+  }
+
+  @media (screen and min-width: 992px){
+
+   justify-content: space-evenly;
+  }
+
+}
+
+.ow_select{
+  display: flex;
+  margin-bottom: 8%;
+  width: 100%;
+@include title;
+  &>div{
+    @media (screen and min-width: 768px){
+     font-size: 110%;
+
+    }
+  }
+
+  &>div:first-of-type{
+    @media (screen and max-width: 767px){
+border-bottom: $black2;
+    }
+
+  }
+
+  @media (screen and min-width: 768px){
+margin-bottom: 4%;
+  }
+
+  &>div{
+    width: 50%;
+    border-bottom: $gray1;
+    @media (screen and min-width: 768px){
+
+     border-bottom: none;
+    }
+
+    &>p{
+      cursor: pointer;
+      text-align: center;
+      font-size: 90%;
+
+      @media (screen and min-width: 768px){
+
+       cursor: default;
+      }
+      @media (screen and min-width: 992px){
+
+       text-decoration: underline;
+      }
+    }
+  }
+
+
+}
+
+.owner_message{
+  display: flex;
+
+  &>p{
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+  }
+  &>div{
+    margin-left: 4%;
+    display: flex;
+
+    @include flex_center_image(20%);
+    justify-content: flex-start;
+  }
+
+}

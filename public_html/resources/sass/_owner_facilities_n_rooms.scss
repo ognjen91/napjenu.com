@@ -1,0 +1,86 @@
+// ======objekti===========
+//
+.owner_option{
+  // border: $black1;
+  @media (screen and min-width: 768px){
+   width: calc(50% - 5px);
+  }
+  @media (screen and min-width: 992px){
+   width: calc(45% - 5px);
+  }
+
+  @media (screen and min-width: 1200px){
+   width: calc(40% - 5px); 
+  }
+}
+.owner_facilities, .owner_rooms{
+  // display: inline-flex;
+  flex-direction: column;
+
+
+
+  &>div{
+    margin-bottom: 5%;
+    border-bottom: $black1;
+    padding: 2% 2% 7% 2%;
+    margin: 1%;
+    @media (screen and min-width: 768px){
+
+
+     // width: calc(48% - 5px);
+    }
+  }
+}
+
+.owner_facility, .owner_room  {
+
+
+  display: flex;
+  justify-content: space-between;
+
+  @media (screen and min-width: 768px){
+   min-height: 20vh;
+   margin: 2%;
+  }
+
+}
+
+.ow_fac_img, .ow_room_img{
+  cursor: pointer;
+  width: 30%;
+  display: flex;
+  @include flex_center_a_image;
+}
+
+.ow_fac_info, .ow_room_info{
+  width: 40%;
+  margin-left: 3%;
+
+  & p{
+    font-size: 85%;
+    font-family: $font2;
+  }
+
+  & span {
+    font-size: 105%;
+  }
+}
+
+.ow_fac_go, .ow_room_go{
+  width: 15%;
+  display: flex;
+  @include flex_center_a_image(40%);
+}
+
+
+// ========sobe==========
+
+// ======objekti===========
+.owner_rooms{
+  display: none;
+  @media (screen and min-width: 768px){
+
+   display: flex;
+
+  }
+}
