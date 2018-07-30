@@ -1106,8 +1106,8 @@ $('body').on('click', '.rs_other_img', function() {
 function slider_fix(){
   $coeficient = 0.7;
   // if ($window_width>=640) $coeficient = 0.8;
-  $(".fac_profile_img").eq(0).height($(".fac_profile_img").eq(0).width() * $coeficient);
-  $(".rs_big_img").eq(0).height($(".rs_big_img").eq(0).width() * $coeficient);
+  // $(".fac_profile_img").eq(0).height($(".fac_profile_img").eq(0).width() * $coeficient);
+  // $(".rs_big_img").eq(0).height($(".rs_big_img").eq(0).width() * $coeficient);
 }
 
 slider_fix();  //(mora i na resize)

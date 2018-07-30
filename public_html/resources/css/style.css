@@ -1123,28 +1123,29 @@ header {
   width: 90vw;
   max-width: 100vw;
   min-width: 100vw;
-  margin-bottom: 1%;
+  margin-bottom: -3%;
   justify-content: space-around; }
   @media (min-width: 640px) {
     .rs_big_img {
       margin-bottom: -2%;
-      width: 60vw;
-      min-width: 60vw;
-      max-width: 60vw; } }
+      width: 90%;
+      min-width: 90%;
+      max-width: 90%;
+      max-height: 70vh; } }
   @media (min-width: 768px) {
     .rs_big_img {
-      width: 70vw;
-      min-width: 70vw;
-      max-width: 70vw; } }
+      width: 90%;
+      min-width: 90%;
+      max-width: 90%; } }
   @media (min-width: 992px) {
     .rs_big_img {
       margin-bottom: -3%; } }
   @media (min-width: 1200px) {
     .rs_big_img {
       margin-bottom: -1%;
-      width: 65vw;
-      min-width: 50vw;
-      max-width: 65vw; } }
+      width: 90%;
+      min-width: 90%;
+      max-width: 90%; } }
 
 .rs_nav {
   z-index: 2;
@@ -1154,6 +1155,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (min-width: 1200px) {
+    .rs_nav {
+      width: 2%; } }
   .rs_nav .image_holder {
     width: 100%;
     display: flex;
@@ -1178,18 +1182,18 @@ header {
     display: flex;
     justify-content: center; }
   .vr_profile_img img {
-    max-width: 90%;
+    width: 100%;
     max-height: 100%; }
   @media (min-width: 768px) {
     .vr_profile_img {
       width: 80%; } }
   @media (min-width: 992px) {
     .vr_profile_img {
-      width: 77%; } }
+      width: 85%; } }
   @media (min-width: 1200px) {
     .vr_profile_img {
-      width: 72%;
-      max-width: 72%;
+      width: 85%;
+      max-width: 85%;
       margin-bottom: 0%; } }
 
 .rs_other_imgs {

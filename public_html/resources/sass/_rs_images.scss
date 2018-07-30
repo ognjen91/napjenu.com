@@ -21,38 +21,48 @@
   max-width: 100vw;
   min-width: 100vw;
   // justify-content: space-around;
-  margin-bottom: 1%;
+  margin-bottom: -3%;
   // border: $green1;
   justify-content: space-around;
-
+  // max-height: 70vh;
+  // height: 70vh;
+  // min-height: 70vh;
 
   @media (screen and min-width: 640px){
     margin-bottom: -2%;
-width: 60vw;
-min-width: 60vw;
-max-width: 60vw;
+width: 90%;
+min-width: 90%;
+max-width: 90%;
+max-height: 70vh;
+// height: 70vh;
+// min-height: 70vh;
   }
 
   @media (screen and min-width: 768px){
     // margin-bottom: 0%;
-width: 70vw;
-min-width: 70vw;
-max-width: 70vw;
+width: 90%;
+min-width: 90%;
+max-width: 90%;
+// max-height: 60vh;
+// height: 60vh;
+// min-height: 60vh;
   }
   @media (screen and min-width: 992px){
     margin-bottom: -3%;
 
+
   }
   @media (screen and min-width: 1200px){
       margin-bottom: -1%;
-width: 65vw;
-min-width: 50vw;
-max-width: 65vw;
+width: 90%;
+min-width: 90%;
+max-width: 90%;
   }
 
 }
 
 .rs_nav{
+  // position: relative;
   z-index: 2;
   // border: $red1;
   width: 7%;
@@ -60,6 +70,12 @@ max-width: 65vw;
   max-width: 7%;
   min-width: 7%;
   display: flex;
+
+  @media (screen and min-width: 1200px){
+
+width: 2%;
+
+  }
   @include flex_center_image;
 
   & img{
@@ -96,7 +112,7 @@ width: 90%;
 }
 
 & img{
-  max-width: 90%;
+  width: 100%;
   max-height: 100%;
 
 }
@@ -112,13 +128,13 @@ width: 90%;
     }
 
     @media (screen and min-width: 992px){
-      width: 77%;
+      width: 85%;
       // margin: 0 -53% 0% -53%;
     }
     @media (screen and min-width: 1200px){
       @include slider_center_img();
-      width: 72%;
-      max-width: 72%;
+      width: 85%;
+      max-width:85%;
       margin-bottom: 0%;
     }
 }
